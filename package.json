@@ -1,0 +1,37 @@
+{
+  "name": "wbmnky",
+  "version": "1.0.0",
+  "description": "my personal npm card",
+  "main": "./bin/card.js",
+  "bin": {
+    "wbmnky": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianroming/wbmnky-card.git"
+  },
+  "homepage": "https://github.com/sebastianroming/wbmnky-card#readme",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node index.js",
+    "card": "node ./bin/card.js",
+    "start": "npm run build && node ./bin/card.js"
+  },
+  "keywords": [
+    "npm",
+    "card",
+    "personal",
+    "information"
+  ],
+  "author": "Sebastian Roming <sebastian@webmonkey.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastianroming/wbmnky-card/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0"
+  },
+  "devDependencies": {
+    "boxen": "^4.2.0"
+  }
+}
